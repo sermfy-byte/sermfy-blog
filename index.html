@@ -271,11 +271,7 @@ const EMOJI = ['⛪','📊','💰','📱','🏛️','👥','📖','✨','🎵','
 // RENDER POST LIST
 // ═══════════════════════════════════════
 function renderList(posts) {
-  const container = document.getElementById('posts-container');
-  if (!posts.length) {
-    container.innerHTML = '<div class="empty-state"><h3>No posts yet</h3><p>Check back soon for articles and updates.</p></div>';
-    return;
-  }
+  window.open(`https://sermfy-blog.vercel.app/?post=${id}`, '_blank');}
 
   const [featured, ...rest] = posts;
 
